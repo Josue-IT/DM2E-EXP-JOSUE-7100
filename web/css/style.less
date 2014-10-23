@@ -1,0 +1,168 @@
+/* LESS Style.css*/
+
+// Fuentes
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+
+// Variables
+
+@negro-transparente: lighten(black, 70%);
+@azul-claro: lighten(blue, 15%);
+/*
+* {
+	border: 1px dashed grey;
+}
+*/
+#contenedor {
+	
+	// display: flex;
+	// flex-direction: row;
+	// flex-wrap: wrap;
+
+	#encabezado {
+		
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		//order:0;
+		//width: 100%;
+		
+		#logo {
+
+			font-family: 'Bangers', cursive;
+			background-color: @negro-transparente;;
+			height: 25px;
+			padding: 0px;
+			margin: 5px;
+			border-radius: 10px;
+			order: 0;
+			//flex-grow:1;
+			
+			img {
+				width: 30px;
+				height: 50px;
+				padding:2px 0px 0px 8px;
+			}
+
+			p {
+				font-size: 20px;
+				color: @azul-claro;
+				padding: 2px 0px 0px 8px;
+				margin: 0px 0px 0px 0px;
+				letter-spacing: 10px;
+				text-shadow:-2px -2px 1px white, 2px 2px 1px white, -2px 2px 1px white, 2px -2px 1px white;
+				float: right;
+			}
+
+		}
+
+		#direccion {
+			
+			border: 1px solid @negro-transparente;
+			border-radius: 10px;
+			padding: 2.5px 5px 2.5px 5px;
+			margin: 5px;
+			width: 350px;
+			order: 1;
+			//flex-grow: 1;
+
+			input {
+				width: 90%;
+				border: 0px;
+			}
+
+			i {
+				float: right;
+				//padding-left: 5px;
+			}
+
+		}
+		
+		#provincias {
+			
+			order: 2;
+			//flex-grow: 1;
+			margin: 5px;
+			
+			select {
+
+			}
+
+		}
+
+	}
+
+	#principal {
+		
+		display: flex;
+		flex-direction: row;
+		border: 1px solid @negro-transparente;
+		margin: 5px;
+		height: 500px;
+		//order: 1;
+
+		#izquierda {
+			
+			order: 0;
+			border: 1px solid @negro-transparente;
+			margin: 5px;
+			width: 60%;
+
+			#filtro-arriba {
+				border: 1px solid @negro-transparente;
+				margin: 5px;
+				height: 10%;
+			}
+
+			#mapa {
+				border: 1px solid @negro-transparente;
+				margin: 5px;
+				padding: 5px;
+				height: 90%;
+				width: 100%;
+			}
+
+		}
+		
+		#derecha{
+			
+			order: 1;
+			border: 1px solid @negro-transparente;
+			margin: 5px;
+			width: 40%;
+
+			#filtros {
+				
+				#fecha {
+					
+					margin: 5px;
+
+					#fecha-desde {
+						margin: 5px;
+						//padding: 0px 0px 20px 0px;
+					}
+
+					#fecha-hasta {
+						margin: 5px;
+						//padding: 10px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	#pie {
+
+		//order: 2;
+
+	}
+
+}
+
+select {
+	border-radius: 5px;
+	border: 1px solid @negro-transparente;
+}
