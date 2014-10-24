@@ -1,4 +1,9 @@
 <?php 
+	// Cookies
+	// Recuerda ultima busqueda en el mapa
+	$centro = "<script> map.getCenter(); </script>";
+	setcookie("centro",$centro);
+	
 	// Provincias España
 	function provincias(){
 		global $conexion;
@@ -13,5 +18,4 @@
 		return $array;
 	}
 
-	// 
  ?>

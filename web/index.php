@@ -7,12 +7,19 @@
 <head>
 	<meta charset="UTF-8"></meta>
 	<title> AlquilaMaps </title>
+	<link rel="shortcut icon" href="img/favicon.ico" />
 	<link rel="stylesheet" href="css/style.css"></link>
 	<link rel="stylesheet" href="css/awsome/css/font-awesome.css"></link>
 	<link rel="stylesheet" href="jquery_ui/jquery-ui.css">
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 </head>
 <body>
+	<!--
+	<div id="cargando">
+		<img src="img/marker.png" alt="">
+		<p>Cargando...</p>
+	</div>
+	-->
 	<div id="contenedor">
 
 		<div id="encabezado">
@@ -35,6 +42,28 @@
 				 	?>
 				</select>
 			</div>
+			<div id="municipios">
+				<select name="" id="select-municipios">
+					<option value="">Provincia1</option>
+					<option value="">Provincia2</option>
+					<option value="">Provincia3</option>
+					<option value="">Provincia4</option>
+					<option value="">Provincia5</option>
+					<option value="">Provincia6</option>
+					<option value="">Provincia7</option>
+					<option value="">Provincia8</option>
+					<option value="">Provincia9</option>
+					<option value="">Provincia10</option>
+				</select>
+			</div>
+			<div id="botones">
+				<i class="fa fa-star boton"></i>
+				<i class="fa fa-facebook boton"></i>
+				<i class="fa fa-twitter boton"></i>
+				<i class="fa fa-linkedin boton"></i>
+				<i class="fa fa-google boton"></i>
+			</div>
+
 		</div>
 
 		<div id="principal">
