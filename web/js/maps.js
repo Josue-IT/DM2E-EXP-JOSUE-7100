@@ -20,7 +20,7 @@ function initialize() {
 // Busca direccion
 function buscaDireccion(direccionVar){
     // Obtenemos la dirección y la asignamos a una variable
-    var direccion = direccionVar+",España";
+    var direccion = direccionVar;
     // Creamos el Objeto Geocoder
     var geocoder = new google.maps.Geocoder();
     // Hacemos la petición indicando la dirección e invocamos la función

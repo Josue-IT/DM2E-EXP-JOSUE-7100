@@ -45,32 +45,10 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#select-provincias').change(function() {
-		var municipios = $('#select-municipios').children('option');
-		var codigoProvincia = 0;
-		//alert(municipios[50].value)
-		if ($('#select-provincias option:selected').text()!='Provincia...')
-		{
-			buscaDireccion($('#select-provincias option:selected').text())
-			// Filtro por provincia
-			codigoProvincia = $('#select-provincias option:selected').val()
-			$.each(municipios,function() {
-				//alert(value)
-				if (codigoProvincia!=$(this).val()) {
-					$(this).hide();
-				}else{
-					$(this).show();
-				};
-			});
-			$('#select-municipios').prepend('<option value="0" selected="selected">Municipio...</option>');
+		if ($('#select-provincias option:selected').text()!='Provincia...') {
+			buscaDireccion($('#select-provincias option:selected').text());
 		};
 	});
-
-	$('#select-municipios').change(function() {
-		if ($('#select-municipios option:selected').text()!='Municipio...') {
-			buscaDireccion($('#select-municipios option:selected').text());
-		};
-	});
-
 /*
 	$('#fecha-desde').onSelect(function(){
 		alert(this.getDate());

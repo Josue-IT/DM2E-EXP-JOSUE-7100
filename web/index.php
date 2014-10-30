@@ -1,6 +1,6 @@
 <?php 
 	require 'php/conexion.php';
-	include 'php/funciones.php';
+	include 'php/funciones.php'
  ?>
 <!DOCTYPE html>
 <html lang="en"></html>
@@ -43,14 +43,17 @@
 				</select>
 			</div>
 			<div id="municipios">
-				<select name="municipios" id="select-municipios">
-					<option value='0'>Municipio...</option>
-					<?php 
-						$municipios = municipios(); // Solo Valladolid
-						foreach ($municipios as $value) {
-							echo "<option value='$value[id]'>$value[municipio]</option>";
-						}
-				 	?>
+				<select name="" id="select-municipios">
+					<option value="">Provincia1</option>
+					<option value="">Provincia2</option>
+					<option value="">Provincia3</option>
+					<option value="">Provincia4</option>
+					<option value="">Provincia5</option>
+					<option value="">Provincia6</option>
+					<option value="">Provincia7</option>
+					<option value="">Provincia8</option>
+					<option value="">Provincia9</option>
+					<option value="">Provincia10</option>
 				</select>
 			</div>
 			<div id="botones">
@@ -67,30 +70,7 @@
 
 			<div id="izquierda">
 				<div id="filtro-arriba">
-					<div id="precio">
-						<input id="precio-desde" type="text" placeholder="Desde..."><i class="fa fa-euro"></i></input>
-						<input id="precio-hasta" type="text" placeholder="Hasta..."><i class="fa fa-euro"></i></input>
-					</div>
-					<div id="dormitorios">
-						<select name="dormitorios" id="select-dormitorios">
-							<option value='0'>Dormitorios...</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</div>
-					<div id="baños">
-						<select name="baños" id="select-baños">
-							<option value='0'>Baños...</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-					</div>
+					
 				</div>
 				<div id="mapa">
 					
